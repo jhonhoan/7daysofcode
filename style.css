@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --vermelho-principal: #8E2424;
+    --preto-principal: #101828;
+    --cinza-claro: #667085;
+    --footer-color: #98A2B3;
+    
+    --font_size-titulo-1-4: 44px;
+    --font_size-titulo-2-3: 36px;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    width: 100%;
+    max-width: 980px;
+    margin: auto;
+    padding: 10px;
+    overflow: hidden;
+    transition: .3s ease;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+       gap: 8px;
+   
+}
+
+.menu{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    
+    
+}
+
+.login_area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+   
+}
+button{
+    background-color: #8E2424;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    width: 112px;
+    height: 44px;
+}
+a{
+    color: var(--cinza-claro);
+    position: relative;
+    padding: 0px 10px 0px 0px;
+    transition: .2s ease-out;
+}
+
+
+
+a::after{
+    content: "";
+    position: absolute;
+    background: linear-gradient(to left,#8e2424de, rgb(255, 255, 255)) ;
+    height: 2px;
+    width: 0%;
+    left: -5px;
+    bottom: -4px;
+    border-radius: 0px 20px 20px 0px ;
+    transition: .2s ease-out;
+    
+}
+a:hover{
+    color: #101828;
+    font-weight: 500;
+    transition: .5s ease-in;
+}
+a:hover::after{
+    transition: .3s ease-in;
+    width: 100%;
+    
+}
+
+.menu_{
+   
+   visibility: hidden;
+}
+
+
+@media (max-width: 778px) {
+    .menu{
+      display: none;
+      justify-content: space-evenly;
+    }
+    .logo{
+        font-size: 36px;
+        font-weight: 400;
+        transition: .3s ease;
+    }
+    .logo img{
+        width: 40px;
+        transition: .3s ease;
+    }
+    .login_area{
+        display: none;
+    }
+    .menu_{
+        display: flex;
+        align-items: center;
+            justify-content: center;
+        visibility: visible;
+       cursor: pointer;
+       margin: 10px;
+       font-size: 2em;
+       transition: .3s ease;
+     }
+
+
+} 
+
+@media (max-width: 370px) {
+    .menu_, .logo {
+        font-size: 1.5em;
+        font-weight: 400;
+    }
+    .logo img{
+        width: 1.2em;
+    }
+} 
