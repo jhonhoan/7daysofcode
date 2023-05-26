@@ -8,9 +8,8 @@
     --cinza-claro: #667085;
     --footer-color: #98A2B3;
     
-    --font_size-titulo-1-4: 44px;
+    --font_size-titulo-1-4: 48px;
     --font_size-titulo-2-3: 36px;
-    
 }
 
 *{
@@ -20,46 +19,52 @@
     font-family: 'Inter', sans-serif;
     list-style-type: none;
     text-decoration: none;
-
+    overflow-x: hidden;
 }
 
 body{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 }
 
+header{
+   width: 100vw;
+   height: 80px;
+  
+  
+}
 .container{
     display: flex;
-    justify-content: space-around;
-    height: 80px;
-    width: 100%;
-    max-width: 980px;
+    justify-content: space-between;
+    align-items: center;
     margin: auto;
+    width:  100%;
+    max-width: 1200px;
     padding: 10px;
-    overflow: hidden;
-    transition: .3s ease;
+    
 }
+
 
 .logo{
     display: flex;
     align-items: center;
-       gap: 8px;
-   
+    gap: 8px;
 }
 
 .menu{
     display: flex;
     gap: 40px;
     align-items: center;
-    
-    
+    justify-content: center;
+    list-style-type: none;
+    height: auto;
 }
 
 .login_area{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 20px;
    
 }
 button{
@@ -74,11 +79,12 @@ button{
 a{
     color: var(--cinza-claro);
     position: relative;
-    padding: 0px 10px 0px 0px;
     transition: .2s ease-out;
 }
 
-
+li{
+    height: 25px;
+}
 
 a::after{
     content: "";
@@ -87,7 +93,7 @@ a::after{
     height: 2px;
     width: 0%;
     left: -5px;
-    bottom: -4px;
+    bottom: -1px;
     border-radius: 0px 20px 20px 0px ;
     transition: .2s ease-out;
     
@@ -108,11 +114,70 @@ a:hover::after{
    visibility: hidden;
 }
 
+.porque_somos_diferentes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 407px;
+}
+
+#p-1{
+    color: #8E2424;
+    font-weight: 600;
+}
+
+.porque_somos_diferentes h1{
+    font-size: var(--font_size-titulo-1-4);
+    font-weight: 600;
+    color: #101828;
+    text-align: center;
+    width: 100%;
+    max-width: 980px;
+    margin: 20px;
+   
+}
+
+.porque_somos_diferentes p{
+color: #667085;
+text-align: center;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+margin: 0px 50px;
+
+}
+.metricas{
+     width: 100vw;
+    max-width: 1200px;
+    margin: auto;
+    height: 288px;
+    
+}
+.content{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 60px;
+    margin: auto;
+    padding: 10px;
+}
+.metric-box{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 8px;
+}
+.metric-box h1{
+    color: var(--vermelho-principal);
+}
 
 @media (max-width: 778px) {
     .menu{
       display: none;
-      justify-content: space-evenly;
     }
     .logo{
         font-size: 36px;
@@ -137,10 +202,13 @@ a:hover::after{
        transition: .3s ease;
      }
 
+     p{
+        text-align: justify;
+     }
 
 } 
 
-@media (max-width: 370px) {
+@media (max-width: 360px) {
     .menu_, .logo {
         font-size: 1.5em;
         font-weight: 400;
