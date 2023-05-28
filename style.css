@@ -41,7 +41,6 @@ header{
     width:  100%;
     max-width: 1200px;
     padding: 10px;
-    
 }
 
 
@@ -57,8 +56,8 @@ header{
     align-items: center;
     justify-content: center;
     list-style-type: none;
-    height: auto;
 }
+
 
 .login_area{
     display: flex;
@@ -79,13 +78,11 @@ button{
 a{
     color: var(--cinza-claro);
     position: relative;
-    transition: .2s ease-out;
-}
+    transition: .2s ease-out;}
 
 li{
-    height: 25px;
+    height: 30px;
 }
-
 a::after{
     content: "";
     position: absolute;
@@ -93,7 +90,7 @@ a::after{
     height: 2px;
     width: 0%;
     left: -5px;
-    bottom: -1px;
+    bottom: -4px;
     border-radius: 0px 20px 20px 0px ;
     transition: .2s ease-out;
     
@@ -119,8 +116,8 @@ a:hover::after{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-    height: 407px;
+    gap: 10px;
+    min-height: 407px;
 }
 
 #p-1{
@@ -135,8 +132,6 @@ a:hover::after{
     text-align: center;
     width: 100%;
     max-width: 980px;
-    margin: 20px;
-   
 }
 
 .porque_somos_diferentes p{
@@ -146,34 +141,241 @@ font-weight: 400;
 font-size: 20px;
 line-height: 30px;
 margin: 0px 50px;
-
 }
 .metricas{
      width: 100vw;
     max-width: 1200px;
     margin: auto;
-    height: 288px;
+    min-height: 288px;
+    
     
 }
 .content{
     width: 100%;
     max-width: 1200px;
+    min-height: 192px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 60px;
     margin: auto;
     padding: 10px;
+    flex-wrap: wrap;
+    overflow-y: hidden;
 }
 .metric-box{
     display: flex;
     flex-direction: column;
     margin: auto;
     gap: 8px;
+    max-width: 280px;
+    
 }
 .metric-box h1{
     color: var(--vermelho-principal);
 }
+
+.metric-text{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    
+}
+.metric-text h6{
+    font-size: 18px;
+    color: var(--preto-principal);
+}
+
+.metric-text p{
+    font-size: 16px;
+    color: var(--cinza-claro);
+}
+
+.vagas{
+    width: 100vw;
+    
+}
+
+.container_talentos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1200px;
+    gap: 64px;
+}
+.conteudo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 200px;
+    gap: 20px;
+}
+.conteudo h1{
+    font-size: var(--font_size-titulo-2-3);
+    text-align: center;
+}
+.conteudo p{
+    font-size: 20px;
+    color: var(--cinza-claro);
+    text-align: center;
+}
+#p-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--vermelho-principal);
+    background-color:#8E24240D;
+    border-radius: 16px;
+    padding: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 4px 12px;
+    height: 28px;
+}
+
+.vagas_abertas{
+    display: flex;
+    flex-direction: column;
+    
+
+    width:  100%;
+    gap: 30px;
+}
+
+.container_works{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    padding: 10px;
+    width: 100%;
+    max-width: 1200px;
+    gap: 30px;
+}
+
+.container_works > p{
+    color: var(--preto-principal);
+    font-size: 20px;
+    font-weight: 500;
+   
+}
+
+.conteudo_works{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    border-radius: 16px;
+
+    margin: auto;
+    min-width: 780px;
+    padding: 24px 24px 28px 24px; 
+}
+.conteudo_works > p{
+    font-weight: 18px;
+    color: var(--preto-principal);
+    font-weight: 500;
+}
+
+.work_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #EAECF0;
+    
+    gap: 24px;
+    border-radius: 16px;
+
+    margin: auto;
+    min-width: 780px;
+    padding: 24px 24px 28px 24px; 
+}
+
+.work_details{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.work_details p{
+    color: var(--cinza-claro);
+
+}
+
+.depoimentos{
+    width: 100vw;
+    padding: 10px;
+    height: 500px;
+}
+
+.conteudo_depoiment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+
+    width: 100%;
+    max-width: 1200px;
+    height: 400px;
+    gap: 20px;
+
+    background-color: #8e242408;
+}
+
+.depoiment_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    
+    overflow-wrap: break-word;
+    gap: 20px;
+}
+.depoiment_text p{
+    font-weight: 600;
+    color: var(--vermelho-principal);
+}
+
+.depoiment_profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    gap: 10px;
+}
+
+footer{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: #F9FAFB;
+}
+
+.formulario{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-around;
+
+    margin: auto;
+    
+    width: 100%;
+    max-width: 1200px;
+   
+}
+
+
 
 @media (max-width: 778px) {
     .menu{
