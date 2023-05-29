@@ -85,6 +85,7 @@ button{
     width: 11.2rem;
     font-size: 1.6rem;
     height: 4.4rem;
+    cursor: pointer;
 }
 a{
     color: var(--cinza-claro);
@@ -395,6 +396,7 @@ footer{
 
 .btn_footer{
     width: 144px;
+    cursor: pointer;
 }
 form{
     width: 100%;
