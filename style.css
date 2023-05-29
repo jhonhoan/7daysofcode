@@ -392,12 +392,25 @@ footer{
        flex-direction: column;
        gap: 20px;
 }
+
+.btn_footer{
+    width: 144px;
+}
 form{
     width: 100%;
-    max-width: 360px;
+}
+.form{
+    margin: auto;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
 }
 form input{
+
     width: 100%;
+    max-width: 360px;
     height: 48px;
     border-radius: 8px;
     padding: 10px;
@@ -446,7 +459,7 @@ footer > p{
 @media (max-width: 515px){
 
    
-    form{
+    .form{
         
         width: 100%;
         margin: auto;
